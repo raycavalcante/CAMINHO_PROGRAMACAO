@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <meta name="author" content="Ray santos">
+    <meta name="descripition" content="meu site com html">
+    <meta name="keywords" content="html5, css">
+    <!-- atualiza de 10 em 10 segundos  -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+</head>
+
+<body>
+    <h1>Adicionando um formulário no seu site</h1>
+
+    <form action="cadastro.py">
+        <fieldset>
+            <legend><strong>Login</strong></legend>
+            <p>
+                <!-- maxlength="10" : máximo de caracteres
+                disabled : desabilitar um campo 
+                
+                -->
+                <!-- Text  -->
+                <label for="nome">Nome:</label>
+                <input type="text" required placeholder="Digite seu nome">
+                <br>
+                <br>
+                <!-- password  -->
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+                <br>
+                <br>
+                <!-- email  -->
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="ex: email@gmail.com" autocomplete="on">
+                <br>
+                <!-- radio  -->
+            <h2>Quem ganha?</h2>
+            <input type="radio" name="time" checked value="Flamengo"> Flamengo <br>
+            <input type="radio" name="time" value="Vaasco"> Vasco <br>
+            <br>
+            <h2>Cores</h2>
+            <input type="checkbox" name="cores" value="azul"> Azul <br>
+            <input type="checkbox" checked name="cores" value="preto"> Preto <br>
+            <input type="checkbox" name="cores" value="verde"> Verde <br>
+            <br>
+            <!-- quantidade : number -->
+            <h2>quantidade</h2>
+            <input type="number" name="quantidade" min="0" max="500" step="10">
+            <!-- range   --> <br>
+            <input type="range" name="quantidade" min="0" max="500">
+            <br>
+            <h2>Cores</h2>
+            <input type="color" name="cores">
+            <br>
+            <br>
+            <h2>carregaar imagens</h2>
+            <input type="file" name="imagem/audio">
+            <!-- input invisivel: hidden  -->
+            <br>
+            <br>
+            <input type="hidden" name="id"> <br> <br>
+            <h2>URL: </h2>
+            <input type="url" name="site">
+            <br> <br>
+            <h2>Search</h2>
+            <input type="search" name="pesquisa">
+            <br><br>
+            <h2>Telefone</h2>
+            <input type="tel" name="telefone">
+            <br> <br>
+            <h2>DATA</h2>
+            <input type="date" name="data" min="2000-12-31" max="2027-12-31">
+            <br><br>
+            <h2>hora</h2>
+            <input formtarget="_blank" type="time" name="hora
+                   ">
+            <!-- aula 22  -->
+            <br>
+            Mensagem: <br>
+            <textarea name="mensagem" rows="5" cols="10"></textarea> <br><br>
+
+            <button type="button">clique aqui</button>
+
+            <!-- aula 23  -->
+            <br> <br>
+            Escolah eu veiculo: <br><br>
+            <select name="vveiculos">
+                <optgroup label="motos">
+                    <option value="pop100">Pop100</option>
+                    <option value="XRE" selected>XRE</option>
+                </optgroup>
+                <optgroup label="carros">
+                    <option value="camaro">Camaro</option>
+                    <option value="fusca">Fusca</option>
+                </optgroup>
+            </select> <br><br>
+            <!-- sula 24  -->
+            lista de cursos:
+            <br> <br>
+            <input type="cursos" list="lista-cursos">
+            <datalist id="lista-cursos">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JAVA"></option>
+            </datalist>
+            <!-- aula25 ok
+             aula 26 -->
+             <!-- podemos usar o formtarget  -->
+
+            </p>
+            <p>
+                <!-- botões enviar e limpar  -->
+                <button type="submit"  name="bot-enviar">Enviar</button>
+                <button type="reset" name="limpar" spellcheck="true">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

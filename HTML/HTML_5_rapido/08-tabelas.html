@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 7px;
+            color: hsl(0, 16%, 42%);
+        }
+
+        .Nome {
+            background-color: darkblue;
+        }
+
+        .Email {
+            background-color: darkcyan;
+
+        }
+
+        .Telefone {
+            background-color: darkgrey;
+        }
+
+        .Idade {
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <caption>Cadastro de clientes</caption>
+
+        <!-- cirando um grupo para cada coluna -->
+        <colgroup>
+            <col class="Nome">
+            <col class="Email">
+            <col class="Telefone">
+            <col class="Idade">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Nome: </th>
+                <th>Email: </th>
+                <th>Telefone</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ray </td>
+                <td>r@gmail.com</td>
+                <td>76787343</td>
+                <td rowspan="2">39</td>
+            </tr>
+            <tr>
+                <td>bruno </td>
+                <td>gs@gmail.com</td>
+                <td>3453567</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total: 2 </td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
